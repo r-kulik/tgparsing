@@ -4,6 +4,9 @@ from telethon.tl.functions.messages import GetHistoryRequest
 import time
 import pandas as pd
 
+startCommand = '/start'
+findCommand = '/find'
+
 class CustomDataFrame:
 
     def __init__(self):
@@ -56,7 +59,7 @@ client.send_message(botEntity, startCommand)
 
 
 
-for professionIndex in range(4, 5):
+for professionIndex in range(24):
     dataFrame = CustomDataFrame()
     for yearExperience in range(21):
         client.send_message(botEntity, findCommand)
